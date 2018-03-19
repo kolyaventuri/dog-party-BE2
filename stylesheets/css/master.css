@@ -5,6 +5,19 @@ body {
   font-family: Roboto, Arial;
 }
 
+img.round {
+    border-radius: 50%;
+    border: 2px solid #438da6;
+}
+
+a.button {
+  padding: 0.5em;
+  background: #FFF;
+  color: #438da6;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid #438da6;
+}
 
 /* NAVIGATION */
 nav {
@@ -70,19 +83,7 @@ nav ul.right-nav li a {
   padding: 0.5em;
 }
 
-.hero .hero-content img {
-    border-radius: 50%;
-    border: 2px solid #438da6;
-}
-
 .hero .hero-content .button {
-  padding: 0.5em;
-  background: #FFF;
-  color: #438da6;
-  font-weight: bold;
-  text-decoration: none;
-  border: 3px solid #438da6;
-
   position: relative;
   top: 1em;
 }
@@ -90,5 +91,14 @@ nav ul.right-nav li a {
 /* CARDS */
 .cards {
   position: relative;
-  display: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card {
+  flex: 1;
+
 }
