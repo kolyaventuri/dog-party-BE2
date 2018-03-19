@@ -1,17 +1,10 @@
 html, body {
-  padding:0;
-  margin:0;
+  height: 100%;
 }
-
 body {
   font-family: Roboto, Arial;
-  width: 100%;
-  height: 100%;
 }
 
-main {
-  height: 100%;
-}
 
 /* NAVIGATION */
 nav {
@@ -36,6 +29,8 @@ nav .brand-logo img {
 nav ul.right-nav {
   list-style: none;
   position: absolute;
+  top:50%;
+  transform: translateY(-50%);
   right: 1.5em;
 }
 
@@ -53,17 +48,16 @@ nav ul.right-nav li a {
 .hero {
   padding:0;
   margin:0;
-  position: absolute;
+  position:relative;
   height: 50%;
   width: 100%;
-  top: 50px;
   background: #FFF url('../../images/park.jpg');
   background-size: cover;
   background-position: top left;
 }
 
 .hero .hero-content {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -55%);
@@ -72,6 +66,8 @@ nav ul.right-nav li a {
 
 .hero .hero-content h1 {
   font-weight: normal;
+  font-size: 2em;
+  padding: 0.5em;
 }
 
 .hero .hero-content img {
@@ -89,4 +85,10 @@ nav ul.right-nav li a {
 
   position: relative;
   top: 1em;
+}
+
+/* CARDS */
+.cards {
+  position: relative;
+  display: none;
 }
