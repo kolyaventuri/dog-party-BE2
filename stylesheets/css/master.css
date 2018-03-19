@@ -110,3 +110,12 @@ nav ul.right-nav li a {
 .card img {
   width: calc(100% / 3);
 }
+
+.card p {
+  padding: 0.75em;
+}
+
+/* FOOTER */
+footer {
+  
+}
